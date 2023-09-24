@@ -1,6 +1,7 @@
 import usePosts from "../../hooks/usePosts.ts";
-import { Link } from "react-router-dom";
-import ROUTER_PATH from "../../constants/routes.ts";
+import CreatePost from "./CreatePost.tsx";
+import ListItems from "./ListItems.tsx";
+import Loader from "../Loader/Loader.tsx";
 
 const List = () => {
   const { getPostsList } = usePosts();
@@ -13,17 +14,12 @@ const List = () => {
   return (
     <div>
       {isLoading ? (
-        <div>...Loading</div>
+        <Loader />
       ) : (
-        <div className="listWrapper">{
-          data?.map((item) => {
-            return (
-              <Link to={`${ROUTER_PATH.POST}?id=${item.id}`} className="link" key={item.id}>
-                <div className="listItem">{item.id}</div>
-              </Link>
-            )
-          })
-        }</div>
+        <>
+          <ListItems data={data} />
+          <CreatePost />
+        </>
       )}
     </div>
   )

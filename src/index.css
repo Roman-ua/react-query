@@ -43,14 +43,6 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
@@ -107,4 +99,19 @@ button:focus-visible {
 span {
   font-weight: bold;
   color: #3b3b3b;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+input {
+  margin: 0 10px 10px 10px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 }

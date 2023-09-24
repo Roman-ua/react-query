@@ -1,5 +1,6 @@
 import usePosts from "../../hooks/usePosts.ts";
 import { useSearchParams } from "react-router-dom";
+import Loader from "../Loader/Loader.tsx";
 
 const Post = () => {
   const { getPostById } = usePosts();
@@ -15,7 +16,7 @@ const Post = () => {
     <div className="postItemWrapper">
       <div className="postItemContent">
         {data?.id !== +id || isLoading ? (
-          <div>...Loading</div>
+          <Loader />
         ) : (
           <>
             <div><span>User ID: </span>{data.userId}</div>
