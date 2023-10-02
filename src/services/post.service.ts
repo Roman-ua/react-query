@@ -11,11 +11,11 @@ class PostService {
     return await api.get<IPost[]>(`${POSTS_URL}/?_start=0&_limit=20`)
   }
 
-  async createPost(title: string, description: string) {
+  async createPost(title: string, description: string, author: string) {
     return api.post(POSTS_URL, {
       title,
       body: description,
-      userId: 1
+      author
     })
 
   }

@@ -1,0 +1,76 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "body": "lorem lorem body",
+      "author": "typicode"
+    },
+    {
+      "title": "test",
+      "body": "test",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "title": "test2",
+      "body": "test2",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "title": "test3",
+      "body": "test3",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "title": "test5",
+      "body": "test5",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "title": "test10",
+      "body": "test10",
+      "author": "test10",
+      "id": 6
+    },
+    {
+      "title": "test11",
+      "body": "test11",
+      "author": "test11",
+      "id": 7
+    },
+    {
+      "title": "test1111",
+      "body": "tets111",
+      "author": "test111",
+      "id": 8
+    },
+    {
+      "title": "test222",
+      "body": "tets222",
+      "author": "test222",
+      "id": 9
+    },
+    {
+      "title": "tt",
+      "body": "tt",
+      "author": "tt",
+      "id": 10
+    },
+    {
+      "title": "rr",
+      "body": "rr",
+      "author": "rr",
+      "id": 11
+    },
+    {
+      "title": "test222",
+      "body": "test222",
+      "author": "test222",
+      "id": 12
+    }
+  ]
+}
